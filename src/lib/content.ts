@@ -1,5 +1,20 @@
 // Contractors Professional Liability Insurance — E&O content
 
+import {
+  PhoneCall,
+  FileSearch,
+  FileSignature,
+  ShieldCheck,
+  Wrench,
+  HardHat,
+  Droplets,
+  Truck,
+  Umbrella,
+  Building2,
+  Award,
+  Handshake,
+} from "lucide-react";
+
 // ─── COPY ────────────────────────────────────────────────────────────────────
 
 export const COPY = {
@@ -7,58 +22,184 @@ export const COPY = {
     eyebrow: "E&O and Professional Liability for Contractors",
     h1Lead: "Protect Your Contracting Firm from",
     h1Highlight: "Professional Claims",
-    subtext:
+    subcopy:
       "General contractors, construction managers, and specialty contractors face professional liability exposure that general liability does not cover. Errors and omissions insurance defends against design errors, specification mistakes, and professional negligence claims before they threaten your firm.",
+    imageAlt: "General contractor reviewing design-build plans on a commercial construction project",
+    statValue: "600+",
+    statLabel: "Contractors insured nationwide",
     ctaPrimary: "Get an E&O Quote",
     ctaSecondary: "844-967-5247",
   },
+  nav: {
+    ariaLabel: "Contractors Professional Liability Insurance navigation",
+  },
+  footer: {
+    ctaTitle: "Get a Contractors Professional Liability Insurance Quote",
+    ctaSubcopy:
+      "E&O, design-build coverage, and professional liability programs for general contractors, construction managers, and specialty firms. 15-minute quotes, A+ carriers.",
+    description:
+      "Specialty professional liability and E&O insurance for general contractors, construction managers, and specialty contractors. Coverage for design errors, specification mistakes, professional negligence, and completed operations professional claims.",
+  },
   servicesGrid: {
+    eyebrow: "Coverage built for contractors",
     h2Lead: "Contractors Professional Liability",
     h2Highlight: "Coverage Lines",
-    lead: "From core E&O and professional liability to general liability, workers compensation, and surety bonds — we write the complete program for contractors with professional service exposure.",
+    lead: "From core E&O and professional liability to general liability, workers compensation, surety bonds, and design-build coverage — we write the complete program for contractors with professional service exposure.",
+    featuredSlug: "e-and-o-coverage",
+    featuredBadge: "Core E&O coverage",
   },
-  whyChoose: {
+  why: {
     eyebrow: "The CCA difference",
     h2Lead: "Why Contractors Choose",
     h2Highlight: "CCA for E&O",
+    lead: "Generic brokers miss the professional liability exposure that modern contractor roles create. We structure E&O programs that match how contractors actually work — design-build, CM-at-risk, design-assist, and value engineering.",
+    sidebarTitle: "Contractor E&O Specialists",
+    sidebarBody:
+      "We understand how professional liability applies to contractors — the difference between a construction defect and a professional negligence claim, how design-build delivery creates E&O exposure, and how to structure coverage that actually responds when a claim arises.",
+  },
+  coverage: {
+    eyebrow: "Comprehensive contractor protection",
+    h2Lead: "Full-Spectrum Coverage for",
+    h2Highlight: "Contractors",
+    lead: "Professional liability, general liability, workers compensation, and surety bonds — coordinated programs that address the full range of contractor risk.",
+    imageAlt: "Construction manager reviewing contract documents on a commercial design-build project",
+    badgeTitle: "Licensed all 50 states",
+    badgeSub: "Writing contractor professional liability programs nationwide",
   },
   process: {
-    eyebrow: "How it works",
-    h2Lead: "Getting Your Contractors",
-    h2Highlight: "E&O Quote",
+    lead: "Getting contractors professional liability insurance shouldn't slow your operation down. Our process is built to move fast.",
   },
-  quoteForm: {
-    heading: "Get Your Contractors Professional Liability Quote",
-    subtext:
-      "Tell us about your contracting operation and professional service scope. We will structure an E&O program from A+ rated carriers within 15 minutes.",
+  testimonials: {
+    eyebrow: "What contractors say",
+    h2Lead: "Trusted by Contractors",
+    h2Highlight: "Nationwide",
+  },
+  finalCta: {
+    h2Lead: "Ready to Protect Your",
+    h2Highlight: "Contracting Firm?",
+    lead: "Get a specialty professional liability quote for your contracting operation. 15 minutes to a complete E&O program from A+ rated carriers who understand contractor professional liability exposure.",
+  },
+  ctaBand: {
+    defaultTitle: "Get Your Contractors Professional Liability Insurance Quote",
+    defaultDescription:
+      "E&O, professional liability, and design-build coverage for general contractors, construction managers, and specialty firms — nationwide.",
+  },
+  faq: {
+    defaultTitleLead: "Contractors Professional Liability",
+    defaultTitleHighlight: "Questions Answered",
+  },
+  servicesPage: {
+    metaTitle: "Contractors Professional Liability Insurance | All Coverage Lines",
+    metaDescription:
+      "Complete professional liability programs for contractors — E&O, general liability, workers compensation, umbrella, surety bonds, and design-build coverage.",
+    h1Lead: "Contractors Professional Liability",
+    h1Highlight: "Coverage Lines",
+    lead: "Every coverage line contractors need — from core E&O and professional liability to general liability, workers compensation, and design-build coverage.",
+    ogTitle: "Contractors Professional Liability Insurance | All Coverage Lines",
+    ogDescription:
+      "Specialty professional liability and E&O for general contractors and construction firms — 15-minute quotes, all 50 states.",
+    ctaTitle: "Get Your Contractors E&O Insurance Quote",
+    ctaDescription:
+      "We write professional liability programs for general contractors, construction managers, design-build firms, and specialty contractors with professional service exposure.",
+  },
+  blogPage: {
+    metaTitle: "Contractors Professional Liability Insurance Blog | E&O Resources",
+    metaDescription:
+      "Professional liability insights for contractors — E&O coverage guidance, design-build risk, construction manager liability, and contractor professional negligence resources.",
+    h1Lead: "Contractors Professional Liability",
+    h1Highlight: "Resources",
+    lead: "Coverage guidance, risk management strategies, and professional liability insights for general contractors and construction firms.",
+    ogTitle: "Contractors Professional Liability Insurance Blog",
+    ogDescription:
+      "E&O and professional liability insights for general contractors, construction managers, and specialty contractors.",
   },
   serviceDetail: {
     h1Suffix: "for Contractors",
     imageAltSuffix: "contractors professional liability insurance",
     category: "Professional Liability Insurance",
   },
-  locations: {
-    eyebrow: "Coverage where you build",
-    h2Lead: "Contractors E&O Insurance",
-    h2Highlight: "Nationwide",
+  about: {
+    metaTitle: "About Contractors Professional Liability Insurance | Contractors Choice Agency",
+    metaDescription:
+      "Contractors Professional Liability Insurance is a specialty program by Contractors Choice Agency — insuring contractors since 2005. Licensed all 50 states, NPN 8608479.",
+    h1Lead: "About Contractors Professional Liability",
+    h1Highlight: "Insurance",
+    lead: "We are Contractors Choice Agency — specialty professional liability and E&O insurance for general contractors, construction managers, and specialty contractors since 2005. Programs built for how contractors actually deliver projects today.",
+    imageAlt: "Contractors Choice Agency team helping contractors with professional liability insurance",
+    storyEyebrow: "Who we are",
+    storyTitle: "Built for Contractors with Professional Service Exposure",
+    storyLead:
+      "Contractors Choice Agency started writing specialty contractor insurance in 2005. As contractor project delivery methods evolved — design-build, CM-at-risk, design-assist, integrated project delivery — we developed deep expertise in contractors professional liability. We understand the E&O exposure that arises when contractors take on professional service responsibilities, and we structure programs that respond when those claims arise.",
+    timeline: [
+      { year: "2005", title: "Founded", desc: "Contractors Choice Agency opens, focused on specialty contractor insurance programs." },
+      { year: "2010", title: "E&O Program Launched", desc: "Developed dedicated professional liability programs for general contractors and construction managers taking on design-build and CM-at-risk delivery." },
+      { year: "2015", title: "National Expansion", desc: "Licensed in all 50 states, writing contractor professional liability programs coast to coast." },
+      { year: "2024", title: "600+ Contractors", desc: "Serving over 600 contractors and construction firms across the United States with specialty professional liability programs." },
+    ],
+    valuesTitle: "How We Work",
+    values: [
+      { icon: "FileSignature", title: "E&O Specialists", desc: "We understand contractor professional liability — design-build exposure, construction manager liability, design-assist risk, and value engineering claims. We do not learn your business from scratch when you call." },
+      { icon: "ShieldCheck", title: "Coordinated Programs", desc: "Professional liability, general liability, workers compensation, umbrella, and surety bonds — coordinated programs that close the gaps generic policies leave." },
+      { icon: "Award", title: "A+ Rated Carriers", desc: "We work with AM Best A+ rated carriers who specialize in contractor professional liability risks. Your program is backed by financially strong insurers." },
+      { icon: "Handshake", title: "Long-Term Relationships", desc: "We are not a one-quote operation. Most of our contractor clients have been with us for years — we grow with your firm as your project delivery evolves." },
+    ],
   },
-  blog: {
-    eyebrow: "Contractor risk resources",
-    h2Lead: "Professional Liability",
-    h2Highlight: "Insights for Contractors",
+  quote: {
+    h1Lead: "Get Your Contractors Professional Liability",
+    h1Highlight: "Insurance Quote",
+    lead: "Tell us about your contracting operation and professional service scope. We will structure a specialty E&O program — professional liability, GL, workers comp, and more. 15 minutes to a complete quote.",
+    trustNicheTitle: "Built for Contractors",
+    trustNicheDesc:
+      "We write professional liability programs for general contractors, construction managers, design-build firms, and specialty contractors with professional service exposure.",
+    errorMessage: "Something went wrong submitting your quote request. Please call us directly at 844-967-5247.",
+    businessPlaceholder: "ABC General Contracting LLC",
+    emailPlaceholder: "you@yourcontractingfirm.com",
+    phonePlaceholder: "(555) 000-0000",
+    messagePlaceholder:
+      "Tell us about your contracting operation — project types, annual revenue, professional service scope (design-build, CM, design-assist, VE), states you work in, number of employees...",
   },
-  aboutHero: {
-    eyebrow: "About Contractors Choice Agency",
-    h1: "Specialty Professional Liability Insurance for the Construction Industry",
-    subtext:
-      "Contractors Choice Agency has insured specialty contractors since 2005. Our professional liability programs are built for general contractors, construction managers, and specialty firms whose project scope includes professional service responsibilities that standard GL does not cover.",
+  contact: {
+    h1Lead: "Contact Contractors Professional Liability",
+    h1Highlight: "Insurance",
+    lead: "Questions about E&O or professional liability coverage for your contracting firm? Our specialists are ready to help.",
+    errorMessage: "Something went wrong. Please call us directly at 844-967-5247.",
   },
-  cta: {
-    heading: "Ready to Protect Your Firm from Professional Claims?",
-    subtext:
-      "Get a contractors professional liability quote from A+ rated carriers who understand construction operations. 15 minutes to a complete E&O program.",
-    primary: "Get Your E&O Quote",
-    secondary: "Call 844-967-5247",
+  coveragePage: {
+    metaTitle: "Contractors Professional Liability Insurance Coverage | What's Covered",
+    metaDescription:
+      "What contractors professional liability insurance covers — E&O, design-build coverage, construction manager liability, professional negligence defense, and completed operations professional claims.",
+    h1Lead: "Contractors Professional Liability",
+    h1Highlight: "Insurance Coverage",
+    lead: "Comprehensive professional liability coverage for general contractors, construction managers, and specialty contractors — covering design errors, specification mistakes, professional negligence, and completed operations professional claims.",
+    sectionTitle: "Coverage Areas for Contractors",
+    nationwideLead:
+      "We write contractors professional liability programs in all 50 states — from Texas design-build firms to California construction managers to New York general contractors facing professional negligence claims on major projects.",
+    faqs: [
+      {
+        q: "Does general liability cover professional negligence claims against contractors?",
+        a: "No. General liability covers bodily injury and property damage from contracting operations, not professional service failures. If a project owner alleges that your design recommendation, value engineering input, specification, or professional judgment caused a financial loss, GL will not respond. Professional liability (E&O) is the coverage that defends and pays those claims.",
+      },
+      {
+        q: "What professional services do contractors perform that create E&O exposure?",
+        a: "Modern contractor delivery methods create a wide range of professional service exposures: design-build design responsibility, value engineering recommendations, constructability review, construction management coordination, schedule management, cost estimating, shop drawing review and approval, design-assist engineering input, and owner's representative functions. Each of these is a professional service that can give rise to a professional negligence claim.",
+      },
+      {
+        q: "How does design-build delivery affect a contractor's professional liability exposure?",
+        a: "In design-build, the contractor holds prime responsibility for both design and construction under one contract. When design errors occur, the project owner's claim runs against the design-build entity — which is the contractor. This fundamentally changes the professional liability exposure from ancillary to primary. Design-build contractors need professional liability coverage structured specifically for design-build delivery.",
+      },
+      {
+        q: "What are the most common professional liability claims against general contractors?",
+        a: "Common claims include: value engineering recommendations that lead to performance failures, design-build specification errors, construction manager coordination failures that cause delays and cost overruns, errors in constructability review that result in field problems, shop drawing review errors, and schedule management failures where the CM's professional decisions are alleged to have caused the delay.",
+      },
+      {
+        q: "Does contractors professional liability cover completed projects?",
+        a: "Yes — this is a critical function of the coverage. Professional liability is claims-made, meaning claims filed during the policy period for acts going back to the retroactive date are covered. Continuous renewal maintains prior acts coverage on completed projects. A professional negligence claim arising from a project you completed three years ago is covered as long as you have maintained continuous professional liability coverage with an adequate retroactive date.",
+      },
+      {
+        q: "What limits of contractors professional liability do project owners require?",
+        a: "Minimum limits vary by project type and owner: $1M per claim is a common floor; $2M to $5M is standard for major commercial, institutional, and public works projects; $5M to $10M or more is required on large infrastructure, healthcare, and government design-build projects. We structure limits to meet your specific project contract requirements.",
+      },
+    ],
   },
 } as const;
 
@@ -66,25 +207,29 @@ export const COPY = {
 
 export const PROCESS = [
   {
-    step: "01",
+    step: 1,
+    icon: PhoneCall,
     title: "Submit Your Quote Request",
     description:
       "Call 844-967-5247 or complete the online form. Tell us about your contracting operation — project types, annual revenue, professional service scope, and any design-build or CM responsibilities.",
   },
   {
-    step: "02",
+    step: 2,
+    icon: FileSearch,
     title: "We Evaluate Your Professional Liability Exposure",
     description:
       "We review your contract types, project delivery methods, and professional service scope to identify the right E&O program structure — coverage trigger, retroactive date, limits, and defense provisions.",
   },
   {
-    step: "03",
+    step: 3,
+    icon: FileSignature,
     title: "Receive Your Program Proposal",
     description:
       "We present a complete professional liability proposal with coverage explanations, limits options, and premium — alongside GL, workers comp, and other lines as needed to complete your program.",
   },
   {
-    step: "04",
+    step: 4,
+    icon: ShieldCheck,
     title: "Bind Coverage and Deliver Certificates",
     description:
       "Approve the program and we bind with your A+ rated carrier. Professional liability certificates and additional insured documentation typically delivered the same day — meeting project contract requirements immediately.",
@@ -153,7 +298,7 @@ export const HOME_FAQS = [
   },
   {
     q: "What is a retroactive date on a professional liability policy?",
-    a: "A retroactive date is the earliest date from which covered professional services can give rise to a claim. Professional liability is claims-made coverage — for a claim to be covered, both the covered act and the claim must occur within the policy's coverage period (or the claim must be filed before the retroactive date cutoff and during the policy period). When you first buy professional liability, the retroactive date is typically the policy inception date. As you renew, maintaining the same retroactive date provides continuous prior acts coverage — which is critical for contractors whose completed projects may generate claims years later.",
+    a: "A retroactive date is the earliest date from which covered professional services can give rise to a claim. Professional liability is claims-made coverage — for a claim to be covered, both the covered act must occur after the retroactive date and the claim must be filed during the policy period. When you first buy professional liability, the retroactive date is typically the policy inception date. As you renew, maintaining the same retroactive date provides continuous prior acts coverage — which is critical for contractors whose completed projects may generate claims years later.",
   },
   {
     q: "What is prior acts coverage for contractors?",
@@ -275,7 +420,7 @@ export const SERVICE_DETAIL: Record<string, ServiceDetail> = {
     whatsCovered: [
       "Design errors on design-build projects — inadequate specifications, coordination failures, engineering input errors",
       "Specification mistakes that require field corrections, rework, or remediation by the owner",
-      "Value engineering recommendations that are alleged to have caused performance failures or increased project costs",
+      "Value engineering recommendations alleged to have caused performance failures or increased project costs",
       "Constructability review failures — failing to identify design conflicts during preconstruction review",
       "Professional coordination negligence — schedule management errors, scope gaps, document control failures",
       "Shop drawing review errors that result in non-conforming installations",
@@ -560,6 +705,15 @@ export const SERVICE_DETAIL: Record<string, ServiceDetail> = {
     ],
   },
 };
+
+// ─── AZ REGIONS ───────────────────────────────────────────────────────────────
+
+export const AZ_REGIONS = [
+  { name: "Phoenix Metro", note: "Serving contractors throughout the greater Phoenix area including Chandler, Mesa, Tempe, Scottsdale, and Gilbert." },
+  { name: "Tucson", note: "Professional liability and E&O programs for contracting firms in southern Arizona." },
+  { name: "Flagstaff", note: "Contractor professional liability coverage for northern Arizona operations and public works projects." },
+  { name: "Yuma", note: "Serving contractors in the Yuma region and western Arizona on commercial and government projects." },
+] as const;
 
 // ─── QUOTE FORM ───────────────────────────────────────────────────────────────
 
