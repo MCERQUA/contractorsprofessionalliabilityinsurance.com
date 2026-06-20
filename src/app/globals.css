@@ -3,26 +3,25 @@
 @tailwind utilities;
 
 /* ============================================================
-   INDUSTRIAL COATING INSURANCE — "Fresh Pasture" Design System
-   Light · corporate · clean · rolling-pasture motif
-   (token NAMES inherited; VALUES remapped: clay=pasture green,
-   sage=stream blue, gold=honey)
+   CONTRACTORS PROFESSIONAL LIABILITY — "Corporate Authority"
+   Bloomberg/FT aesthetic: dense, institutional, authoritative
+   Light blue-white content sections · deep navy hero/footer
    ============================================================ */
 
 @layer base {
   :root {
-    --bg-cream: #F6F8FA;
-    --bg-sand: #EBF0F4;
+    --bg-cream: #f2f4f8;
+    --bg-sand: #e6eaf2;
     --bg-white: #FFFFFF;
-    --clay: #1E3A5E;
-    --clay-dark: #132640;
-    --sage: #2E7B6B;
-    --gold: #E07820;
-    --espresso: #0E1824;
-    --cocoa: #3A4850;
-    --mocha: #687078;
-    --adobe: #D4DCE4;
-    --radius: 1rem;
+    --clay: #0a1628;
+    --clay-dark: #050d1a;
+    --sage: #4a90d9;
+    --gold: #c0c0c0;
+    --espresso: #0a1628;
+    --cocoa: #1e3360;
+    --mocha: #3d5a80;
+    --adobe: #c4cce0;
+    --radius: 0;
   }
 
   * { border-color: var(--adobe); }
@@ -36,20 +35,20 @@
 
   body {
     background-color: var(--bg-cream);
-    color: var(--cocoa);
+    color: #2d3748;
     font-family: var(--font-body), system-ui, -apple-system, sans-serif;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading), Georgia, serif;
+    font-family: var(--font-heading), system-ui, sans-serif;
     color: var(--espresso);
-    letter-spacing: -0.015em;
-    font-weight: 700;
+    letter-spacing: -0.03em;
+    font-weight: 800;
   }
 
   ::selection {
-    background: rgba(30, 58, 94, 0.14);
+    background: rgba(10, 22, 40, 0.12);
     color: var(--espresso);
   }
 }
@@ -59,119 +58,113 @@
   .container-wide { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full
-           bg-clay text-white font-heading font-semibold text-base
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5
+           bg-clay text-white font-heading font-bold text-sm uppercase tracking-[0.06em]
            shadow-warm hover:bg-clay-dark hover:shadow-warm-lg
            hover:-translate-y-0.5 transition-all duration-200
-           focus:outline-none focus:ring-4 focus:ring-clay/25;
+           focus:outline-none focus:ring-2 focus:ring-clay/30;
+    border-radius: 0;
   }
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full
-           bg-white text-espresso font-heading font-semibold text-base
-           border-2 border-adobe hover:border-clay hover:text-clay
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5
+           bg-white text-clay font-heading font-bold text-sm uppercase tracking-[0.06em]
+           border-2 border-clay hover:bg-clay hover:text-white
            hover:-translate-y-0.5 transition-all duration-200
-           focus:outline-none focus:ring-4 focus:ring-clay/15;
+           focus:outline-none focus:ring-2 focus:ring-clay/20;
+    border-radius: 0;
   }
   .btn-sage {
-    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full
-           bg-sage text-white font-heading font-semibold text-base
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5
+           bg-sage text-white font-heading font-bold text-sm uppercase tracking-[0.06em]
            shadow-warm hover:bg-sage-dark hover:shadow-warm-lg
-           hover:-translate-y-0.5 transition-all duration-200
-           focus:outline-none focus:ring-4 focus:ring-sage/25;
+           hover:-translate-y-0.5 transition-all duration-200;
+    border-radius: 0;
   }
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full
-           text-cocoa font-medium text-sm hover:bg-sand hover:text-clay
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5
+           text-mocha font-medium text-sm hover:text-clay
            transition-colors duration-200;
+    border-radius: 0;
   }
 
   .card-warm {
-    @apply bg-white rounded-3xl border border-adobe shadow-card
-           hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300;
+    @apply bg-white border border-adobe shadow-card
+           hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-300;
+    border-radius: 0;
   }
   .card-arch {
-    @apply bg-white border border-adobe shadow-card rounded-3xl
+    @apply bg-white border border-adobe shadow-card
            relative overflow-hidden hover:shadow-card-hover
-           hover:-translate-y-1 transition-all duration-300;
+           hover:-translate-y-0.5 transition-all duration-300;
+    border-radius: 0;
   }
   .card-arch::before {
     content: "";
     position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 6px;
-    background: linear-gradient(90deg, #2F6B3E 0%, #4A8B58 24%, #2E7BB5 58%, #E0A82E 100%);
+    top: 0; left: 0; bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #0a1628 0%, #4a90d9 100%);
   }
-  .pill { @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-heading font-semibold uppercase tracking-wider; }
-  .pill-clay { @apply pill bg-clay/10 text-clay border border-clay/20; }
+  .pill { @apply inline-flex items-center gap-2 px-4 py-1.5 text-xs font-heading font-semibold uppercase tracking-wider; border-radius: 0; }
+  .pill-clay { @apply pill bg-clay/10 text-clay border border-clay/25; }
   .pill-sage { @apply pill bg-sage/10 text-sage-dark border border-sage/25; }
-  .pill-gold { @apply pill bg-gold/20 text-gold-dark border border-gold/40; }
+  .pill-gold { @apply pill bg-gold/20 text-gold-dark border border-adobe; }
 
-  .eyebrow { @apply inline-flex items-center gap-2 text-xs font-heading font-bold uppercase tracking-[0.18em] text-clay; }
-  .h-section { @apply font-heading font-bold text-3xl md:text-4xl lg:text-5xl text-espresso leading-[1.1]; }
+  .eyebrow { @apply inline-flex items-center gap-2 text-[10px] font-heading font-bold uppercase tracking-[0.20em] text-clay; }
+  .h-section { @apply font-heading font-extrabold text-3xl md:text-4xl lg:text-5xl text-espresso leading-[1.05] tracking-tight; }
   .lead { @apply text-lg md:text-xl text-mocha leading-relaxed; }
 
-  /* === Decorative motifs — "pasture" (rolling green hills) === */
+  /* Dense grid rule motif — Bloomberg aesthetic */
   .bg-sonoran {
     background-color: var(--bg-cream);
     background-image:
-      radial-gradient(circle at 15% 15%, rgba(74, 139, 88, 0.10) 0%, transparent 35%),
-      radial-gradient(circle at 85% 75%, rgba(46, 123, 181, 0.07) 0%, transparent 40%);
+      linear-gradient(var(--adobe) 1px, transparent 1px);
+    background-size: 100% 48px;
   }
   .bg-sonoran-sand {
     background-color: var(--bg-sand);
     background-image:
-      radial-gradient(circle at 70% 20%, rgba(47, 107, 62, 0.07) 0%, transparent 45%),
-      radial-gradient(circle at 20% 80%, rgba(224, 168, 46, 0.08) 0%, transparent 40%);
+      linear-gradient(#c4cce0 1px, transparent 1px);
+    background-size: 100% 48px;
   }
   .bg-warm-radial {
     background:
-      radial-gradient(ellipse at top, rgba(74, 139, 88, 0.12) 0%, transparent 55%),
-      radial-gradient(ellipse at bottom right, rgba(46, 123, 181, 0.07) 0%, transparent 50%),
+      radial-gradient(ellipse at top, rgba(10,22,40,0.05) 0%, transparent 55%),
       var(--bg-cream);
   }
-  /* Field band — layered rolling hills = pasture horizon */
   .horizon-band {
     background: linear-gradient(180deg,
-      #2F6B3E 0% 18%, #4A8B58 18% 34%, #E0A82E 34% 48%,
-      #4A8B58 48% 62%, #2F6B3E 62% 78%, #2E7BB5 78% 100%);
+      #0a1628 0% 25%, #1e3360 25% 50%, #c0c0c0 50% 75%, #0a1628 75% 100%);
   }
   .grain {
     background-image:
-      repeating-linear-gradient(92deg, rgba(47,107,62,0.0) 0px, rgba(47,107,62,0.0) 10px, rgba(255,255,255,0.025) 10px, rgba(255,255,255,0.025) 11px),
-      repeating-linear-gradient(88deg, rgba(0,0,0,0.0) 0px, rgba(0,0,0,0.0) 23px, rgba(0,0,0,0.03) 23px, rgba(0,0,0,0.03) 24px);
+      repeating-linear-gradient(90deg, rgba(10,22,40,0.0) 0px, rgba(10,22,40,0.0) 47px, rgba(10,22,40,0.04) 47px, rgba(10,22,40,0.04) 48px);
   }
   .dotted-warm {
-    background-image: radial-gradient(circle, rgba(47, 107, 62, 0.14) 1px, transparent 1px);
+    background-image: radial-gradient(circle, rgba(10,22,40,0.08) 1px, transparent 1px);
     background-size: 24px 24px;
   }
-  .arch-divider { position: relative; height: 3rem; width: 100%; }
-  .arch-divider::after {
-    content: ""; position: absolute; inset: 0; margin: auto;
-    width: 10rem; height: 1.4rem;
-    background: linear-gradient(90deg, #2F6B3E 0% 18%, #4A8B58 18% 40%, #E0A82E 40% 62%, #2E7BB5 62% 82%, #2F6B3E 82% 100%);
-    border-radius: 0.5rem; opacity: 0.92;
-  }
+  .arch-divider { position: relative; height: 1px; width: 100%; background: var(--adobe); margin: 0; }
+  .arch-divider::after { display: none; }
 
   .prose-warm { @apply max-w-none; }
-  .prose-warm h2 { @apply font-heading font-bold text-2xl md:text-3xl text-espresso mt-12 mb-4; }
+  .prose-warm h2 { @apply font-heading font-extrabold text-2xl md:text-3xl text-espresso mt-12 mb-4; }
   .prose-warm h3 { @apply font-heading font-bold text-xl md:text-2xl text-espresso mt-8 mb-3; }
-  .prose-warm p { @apply text-cocoa leading-relaxed mb-5 text-[1.05rem]; }
+  .prose-warm p { @apply text-[#2d3748] leading-relaxed mb-5 text-[1.05rem]; }
   .prose-warm ul { @apply my-5 space-y-2 pl-0 list-none; }
-  .prose-warm li { @apply text-cocoa leading-relaxed pl-7 relative; }
+  .prose-warm li { @apply text-[#2d3748] leading-relaxed pl-7 relative; }
   .prose-warm li::before {
-    content: ""; position: absolute; left: 0; top: 0.55em;
-    width: 1.1rem; height: 0.5rem;
-    background: linear-gradient(90deg, #2F6B3E 0% 35%, #E0A82E 35% 70%, #2E7BB5 70% 100%);
-    border-radius: 0.15rem 0.5rem 0.15rem 0.5rem; opacity: 0.9;
+    content: ""; position: absolute; left: 0; top: 0.6em;
+    width: 1rem; height: 2px;
+    background: var(--clay);
   }
   .prose-warm strong { @apply text-espresso font-semibold; }
-  .prose-warm a { @apply text-sage-dark font-semibold underline decoration-gold/60 underline-offset-2 hover:decoration-sage; }
-  .prose-warm blockquote { @apply border-l-4 border-sage pl-5 py-2 my-6 text-espresso italic font-heading; }
+  .prose-warm a { @apply text-sage-dark font-semibold underline decoration-sage/40 underline-offset-2 hover:decoration-sage; }
+  .prose-warm blockquote { @apply border-l-4 border-clay pl-5 py-2 my-6 text-espresso italic font-heading; }
 }
 
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .animate-marquee { animation: marquee 32s linear infinite; }
-@keyframes shimmer-line { 0% { background-position: -200% center; } 100% { background-position: 200% center; } }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -184,6 +177,6 @@
 
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: var(--bg-sand); }
-::-webkit-scrollbar-thumb { background: var(--clay); border-radius: 6px; border: 2px solid var(--bg-sand); }
+::-webkit-scrollbar-thumb { background: var(--clay); border-radius: 0; border: 2px solid var(--bg-sand); }
 ::-webkit-scrollbar-thumb:hover { background: var(--clay-dark); }
-:focus-visible { outline: 2px solid var(--clay); outline-offset: 3px; border-radius: 4px; }
+:focus-visible { outline: 2px solid var(--clay); outline-offset: 3px; border-radius: 0; }
