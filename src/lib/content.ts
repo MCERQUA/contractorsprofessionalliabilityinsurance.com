@@ -240,20 +240,24 @@ export const PROCESS = [
 
 export const WHY_CHOOSE = [
   {
+    icon: ShieldCheck,
     title: "Construction Professional Liability Expertise",
-    body: "We understand how professional liability applies to contractors — the difference between a construction defect claim and a professional negligence claim, how design-build delivery creates E&O exposure, and how to structure coverage that actually responds when a claim arises. Generic brokers miss these distinctions.",
+    description: "We understand how professional liability applies to contractors — the difference between a construction defect claim and a professional negligence claim, how design-build delivery creates E&O exposure, and how to structure coverage that actually responds when a claim arises. Generic brokers miss these distinctions.",
   },
   {
+    icon: FileSignature,
     title: "Claims-Made Coverage Structured Correctly",
-    body: "Professional liability is claims-made coverage — the retroactive date, extended reporting periods, and continuous coverage requirements are critical. We explain these provisions clearly and structure your program so you are not exposed to gaps when policies renew or project scopes change.",
+    description: "Professional liability is claims-made coverage — the retroactive date, extended reporting periods, and continuous coverage requirements are critical. We explain these provisions clearly and structure your program so you are not exposed to gaps when policies renew or project scopes change.",
   },
   {
+    icon: HardHat,
     title: "Coordinated with Your GL Program",
-    body: "Professional liability and general liability interact at the boundaries of construction defect and professional negligence claims. We coordinate both coverages to eliminate the finger-pointing between insurers that leaves contractors exposed. One integrated program, no gaps.",
+    description: "Professional liability and general liability interact at the boundaries of construction defect and professional negligence claims. We coordinate both coverages to eliminate the finger-pointing between insurers that leaves contractors exposed. One integrated program, no gaps.",
   },
   {
+    icon: Building2,
     title: "Project Owner Certificate Requirements Met",
-    body: "Design-build contracts, construction management agreements, and public works projects often specify professional liability limits, retroactive dates, and additional insured language. We know these requirements and build them into your program before binding — not after the project owner rejects the certificate.",
+    description: "Design-build contracts, construction management agreements, and public works projects often specify professional liability limits, retroactive dates, and additional insured language. We know these requirements and build them into your program before binding — not after the project owner rejects the certificate.",
   },
 ] as const;
 
