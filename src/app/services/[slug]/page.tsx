@@ -9,13 +9,13 @@ import { FadeIn } from "@/components/animations/FadeIn";
 import { SERVICES, SITE } from "@/lib/site";
 import { SERVICE_DETAIL, GENERAL_FAQS, COPY } from "@/lib/content";
 import {
-  ShieldCheck, Droplets, FileSignature, HardHat, Truck, Wrench, Umbrella, Building2,
+  FileSignature, ShieldCheck, Building2, HardHat, Umbrella, Wrench, Truck,
   CheckCircle2, ArrowRight, ArrowLeft, Users, Target,
   ChevronDown,
 } from "lucide-react";
 
 const ICONS = {
-  ShieldCheck, Droplets, FileSignature, HardHat, Truck, Wrench, Umbrella, Building2,
+  FileSignature, ShieldCheck, Building2, HardHat, Umbrella, Wrench, Truck,
 } as const;
 
 export function generateStaticParams() {

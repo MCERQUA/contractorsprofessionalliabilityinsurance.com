@@ -6,12 +6,10 @@ import { CTABand } from "@/components/sections/CTABand";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { SERVICES, SITE } from "@/lib/site";
 import { COPY } from "@/lib/content";
-import {
-  ShieldCheck, Droplets, FileSignature, HardHat, Truck, Wrench, Umbrella, Building2, ArrowRight,
-} from "lucide-react";;
+import { FileSignature, ShieldCheck, Building2, HardHat, Umbrella, Wrench, Truck, ArrowRight } from "lucide-react";;
 
 const ICONS = {
-  ShieldCheck, Droplets, FileSignature, HardHat, Truck, Wrench, Umbrella, Building2,
+  FileSignature, ShieldCheck, Building2, HardHat, Umbrella, Wrench, Truck,
 } as const;
 
 export const metadata: Metadata = {
