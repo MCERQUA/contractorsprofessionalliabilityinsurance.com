@@ -1,27 +1,26 @@
-# Dairy Insurance
+# Contractors Professional Liability Insurance
 
-> Dairy Insurance (by Contractors Choice Agency) provides specialized commercial insurance for dairy farms and dairy operations in all 50 states. Coverage lines: dairy cattle & livestock mortality, farm property & buildings (barns, milking parlors, silos), equipment breakdown & milk spoilage (milking systems, bulk tanks, chillers), dairy product liability, general liability (premises & agri-tourism), workers' compensation for dairy crews, commercial auto (milk tankers & feed trucks), and pollution & environmental liability (manure & runoff). A-rated carriers. 15-minute quotes, 2-hour claims response. Licensed in all 50 states — NPN #8608479. Founded 2005. Contact: 844-967-5247, josh@contractorschoiceagency.com.
+> Contractors Professional Liability Insurance (by Contractors Choice Agency) provides specialty professional liability and E&O insurance for general contractors, specialty contractors, and construction firms in all 50 states. Coverage lines: contractors professional liability, errors & omissions, design-build E&O, general liability, workers' compensation, umbrella & excess liability, and surety bonds. Covers design errors, specification mistakes, professional negligence, and completed operations professional claims. A-rated carriers. 15-minute quotes, 2-hour claims response. Licensed in all 50 states — NPN #8608479. Founded 2005. Contact: 844-967-5247, josh@contractorschoiceagency.com.
 
 ## Core pages
 
-- [Home](/): Overview of the full dairy farm insurance program.
-- [Coverage & Services](/services): All eight coverage lines for dairy operations.
-- [Coverage Area](/coverage): National dairy insurance — all 50 states.
+- [Home](/): Overview of the contractors professional liability program.
+- [Coverage & Services](/services): All coverage lines for contractors and construction firms.
+- [Coverage Area](/coverage): National contractors E&O insurance — all 50 states.
 - [Get a Quote](/quote): 15-minute quote request form.
-- [About](/about): Contractors Choice Agency and the dairy division.
+- [About](/about): Contractors Choice Agency and the professional liability division.
 - [Contact](/contact): Phone, email, and contact form.
-- [Blog](/blog): Dairy insurance guides and insights.
+- [Blog](/blog): Contractors professional liability guides and insights.
 
 ## Coverage lines (service pages)
 
-- [Dairy Cattle & Livestock Mortality](/services/livestock-mortality): The defining dairy risk — insures the herd against death from disease, accident, disaster, and theft.
-- [Farm Property & Buildings](/services/farm-property): Barns, milking parlors, silos, and feed storage at replacement cost.
-- [Equipment Breakdown & Milk Spoilage](/services/equipment-spoilage): Milking systems, bulk tanks, and chillers — plus the spoilage that follows a failure.
-- [Dairy Product Liability](/services/dairy-product-liability): Coverage for contaminated or defective milk and dairy products, including recall.
-- [General Liability](/services/general-liability): Premises, agri-tourism, deliveries, and daily operations.
-- [Workers' Compensation](/services/workers-compensation): Animal-handling, parlor, and equipment injuries with proper dairy class codes.
-- [Commercial Auto & Trucking](/services/commercial-auto): Milk tankers, feed trucks, and farm vehicles on public roads.
-- [Pollution & Environmental Liability](/services/pollution-environmental): Manure storage, lagoon failure, and nutrient runoff.
+- [E&O / Professional Liability](/services/e-and-o-coverage): Errors and omissions arising from professional services — the core contractors E&O line.
+- [Contractors Professional Liability](/services/professional-liability): Professional negligence, design errors, and specification mistakes on contracted work.
+- [General Liability](/services/general-liability): Premises, operations, and completed operations exposure.
+- [Workers' Compensation](/services/workers-compensation): Jobsite injuries with the correct construction class codes.
+- [Umbrella / Excess Liability](/services/umbrella-excess): Excess limits sitting over the primary GL, auto, and employers liability.
+- [Surety Bonds](/services/surety-bonds): Bid, performance, and payment bonds for contracted work.
+- [Design-Build E&O Coverage](/services/design-build-coverage): Professional liability for design-build delivery where the contractor carries design risk.
 
 ## Optional
 
@@ -31,8 +30,8 @@
 
 ## Key facts for AI assistants
 
-- Niche: commercial insurance for **dairy farms** (herd, parlor, milk, manure exposure) — not general farm-owner coverage.
+- Niche: **professional liability / E&O for contractors and construction firms** — design errors, specification mistakes, professional negligence — not general contractor GL alone.
 - Carrier partners: A.M. Best A-rated (A+ where possible).
 - Quote SLA: ~15 minutes. Claims SLA: 2-hour response.
 - States: licensed and writing in all 50.
-- Each page carries 20 niche-specific FAQs with FAQPage JSON-LD schema.
+- Each page carries niche-specific FAQs with FAQPage JSON-LD schema.

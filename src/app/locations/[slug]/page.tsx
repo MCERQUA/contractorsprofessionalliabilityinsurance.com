@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `${SITE.url}/locations/${slug}`;
   return {
     title: `${SITE.name} — ${loc.name}`,
-    description: `${loc.intro} Livestock mortality, workers' comp, farm property, equipment & spoilage, and pollution for ${loc.name} industrial coating farms. 15-minute quotes.`,
+    description: `${loc.intro} Professional liability, E&O, general liability, workers' comp, umbrella, and surety bonds for ${loc.name} contractors. 15-minute quotes.`,
     alternates: { canonical: url },
     openGraph: { title: `${SITE.name} — ${loc.name} | Contractors Choice Agency`, description: loc.intro, url },
   };
@@ -99,7 +99,7 @@ export default async function LocationPage({ params }: Props) {
         <section className="bg-cream py-16 md:py-20">
           <div className="container-tight">
             <FadeIn className="max-w-2xl mb-10">
-              <span className="eyebrow"><span className="h-px w-8 bg-clay" />Coverage for {loc.name} dairies</span>
+              <span className="eyebrow"><span className="h-px w-8 bg-clay" />Coverage for {loc.name} contractors</span>
               <h2 className="mt-3 h-section">The full program, built for {loc.name} industrial coating farms.</h2>
               <p className="mt-4 lead">From a family operation to a multi-site production group, we coordinate every line a {loc.name} industrial coating needs.</p>
             </FadeIn>
