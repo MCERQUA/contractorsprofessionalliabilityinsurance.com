@@ -89,7 +89,7 @@ export default async function LocationPage({ params }: Props) {
 
               <FadeIn direction="left" className="lg:col-span-5">
                 <div className="rounded-t-[10rem] rounded-b-3xl overflow-hidden border-4 border-white shadow-warm-lg">
-                  <img src="/images/coverage.jpg" alt={`Industrial Coating farm in ${loc.name}`} className="w-full h-[300px] md:h-[360px] object-cover" loading="lazy" />
+                  <img src="/images/coverage.jpg" alt={`Industrial Coating work in ${loc.name}`} className="w-full h-[300px] md:h-[360px] object-cover" loading="lazy" />
                 </div>
               </FadeIn>
             </div>
@@ -100,7 +100,7 @@ export default async function LocationPage({ params }: Props) {
           <div className="container-tight">
             <FadeIn className="max-w-2xl mb-10">
               <span className="eyebrow"><span className="h-px w-8 bg-clay" />Coverage for {loc.name} contractors</span>
-              <h2 className="mt-3 h-section">The full program, built for {loc.name} industrial coating farms.</h2>
+              <h2 className="mt-3 h-section">The full program, built for {loc.name} contractors professional liability clients.</h2>
               <p className="mt-4 lead">From a family operation to a multi-site production group, we coordinate every line a {loc.name} industrial coating needs.</p>
             </FadeIn>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -119,7 +119,7 @@ export default async function LocationPage({ params }: Props) {
 
         <FAQ items={locFaqs} eyebrow={`${loc.name} — FAQ`} title={<>Industrial Coating insurance questions for <span className="text-clay">{loc.name}</span></>} background="sand" />
 
-        <CTABand title={`Insuring industrial coating farms in ${loc.name} since 2005`} description={`Local knowledge, A-rated markets, and 15-minute quotes. Call ${SITE.phone} or request a quote online.`} />
+        <CTABand title={`Insuring contractors professional liability clients in ${loc.name} since 2005`} description={`Local knowledge, A-rated markets, and 15-minute quotes. Call ${SITE.phone} or request a quote online.`} />
       </main>
       <Footer />
     </>
