@@ -342,7 +342,7 @@ export const HOME_FAQS = [
   },
   {
     q: "How do I reach Contractors Professional Liability Insurance?",
-    a: "Call us at 844-967-5247 (Mon–Fri 8am–5pm MST) or email josh@contractorschoiceagency.com. Submit the online quote form and we will respond within 15 minutes during business hours. We are located at 12220 E Riggs Road Suite #105, Chandler AZ 85249. NPN 8608479, licensed all 50 states.",
+    a: "Call us at 844-967-5247 (Mon–Fri 8am–5pm MST) or email josh@contractorschoiceagency.com. Submit the online quote form and we will respond within 15 minutes during business hours. We are located at 12220 E Riggs Road Suite #104, Chandler AZ 85249. NPN 8608479, licensed all 50 states.",
   },
 ] as const;
 
@@ -391,7 +391,7 @@ export const GENERAL_FAQS = [
   },
   {
     q: "Where are you located?",
-    a: "12220 E Riggs Road Suite #105, Chandler, AZ 85249. We serve contractors nationwide by phone and online.",
+    a: "12220 E Riggs Road Suite #104, Chandler, AZ 85249. We serve contractors nationwide by phone and online.",
   },
   {
     q: "What email address can I use to contact you?",
