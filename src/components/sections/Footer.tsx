@@ -17,7 +17,7 @@ export function Footer() {
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <a href={SITE.phoneHref} className="btn-secondary !bg-white/10 !border-white/20 !text-cream hover:!bg-white/20 hover:!text-white"><Phone className="h-4 w-4" />{SITE.phone}</a>
-            <Link href="/quote" className="btn-primary">Get a Free Quote</Link>
+            <Link href="/quote" className="btn-primary !bg-gold !text-espresso hover:!bg-gold-light">Get a Free Quote</Link>
           </div>
         </div>
       </div>

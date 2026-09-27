@@ -25,7 +25,7 @@ export function CTABand({
               <h2 className="font-heading font-extrabold text-cream text-2xl md:text-4xl leading-tight">{title}</h2>
               <p className="mt-4 text-cream/80 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">{description}</p>
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-                <Link href="/quote" className="btn-primary">Get a free quote<ArrowRight className="h-5 w-5" /></Link>
+                <Link href="/quote" className="btn-primary !bg-gold !text-espresso hover:!bg-gold-light">Get a free quote<ArrowRight className="h-5 w-5" /></Link>
                 <a href={SITE.phoneHref} className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white/10 text-cream font-heading font-semibold text-base border border-white/20 hover:bg-white/20 transition-all"><Phone className="h-5 w-5" />{SITE.phone}</a>
               </div>
             </div>

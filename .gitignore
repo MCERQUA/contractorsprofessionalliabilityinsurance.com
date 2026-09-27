@@ -19,3 +19,6 @@ id_rsa*
 deploy-key*
 *.env
 .env.*
+
+# TypeScript incremental build state (regenerated every build)
+*.tsbuildinfo
