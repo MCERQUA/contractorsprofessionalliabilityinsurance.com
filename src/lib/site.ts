@@ -209,24 +209,3 @@ export const STATS = [
   { value: 15, suffix: " min", label: "Average quote turnaround", prefix: "" },
   { value: 50, suffix: "", label: "States licensed & writing", prefix: "" },
 ] as const;
-
-export const TESTIMONIALS = [
-  {
-    quote: "We took on a design-build commercial project and the owner came back two years after completion alleging our structural specifications were defective. The claim was $1.4 million. Our contractors professional liability policy defended the entire case, and we settled for a fraction of the demand. Without E&O coverage, that claim would have ended our company.",
-    name: "Robert M.",
-    role: "President, General Contracting Firm",
-    location: "Texas",
-  },
-  {
-    quote: "As a construction manager, we review and coordinate design documents but we don't stamp drawings. We thought that meant we had no professional liability exposure. Then we got named in a claim alleging we failed to catch a design error that caused a $900,000 delay. CCA had structured our E&O policy specifically for CM-at-risk operations. Covered from day one.",
-    name: "Diane L.",
-    role: "CEO, Construction Management Company",
-    location: "California",
-  },
-  {
-    quote: "We do value engineering on every major project — that's a professional service, even if we don't think of it that way. Our prior broker never flagged the E&O exposure. CCA explained exactly how a VE recommendation that leads to a performance failure creates a professional negligence claim. We switched to their contractors professional liability program immediately.",
-    name: "Thomas K.",
-    role: "Owner, Specialty Contracting Group",
-    location: "Illinois",
-  },
-] as const;

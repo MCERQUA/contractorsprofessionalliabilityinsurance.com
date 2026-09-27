@@ -69,11 +69,6 @@ export const COPY = {
   process: {
     lead: "Getting contractors professional liability insurance shouldn't slow your operation down. Our process is built to move fast.",
   },
-  testimonials: {
-    eyebrow: "What contractors say",
-    h2Lead: "Trusted by Contractors",
-    h2Highlight: "Nationwide",
-  },
   finalCta: {
     h2Lead: "Ready to Protect Your",
     h2Highlight: "Contracting Firm?",
@@ -154,7 +149,7 @@ export const COPY = {
     errorMessage: "Something went wrong submitting your quote request. Please call us directly at 844-967-5247.",
     businessPlaceholder: "ABC General Contracting LLC",
     emailPlaceholder: "you@yourcontractingfirm.com",
-    phonePlaceholder: "(555) 000-0000",
+    phonePlaceholder: "Best number to reach you",
     messagePlaceholder:
       "Tell us about your contracting operation — project types, annual revenue, professional service scope (design-build, CM, design-assist, VE), states you work in, number of employees...",
   },
