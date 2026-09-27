@@ -5,22 +5,22 @@
 /* ============================================================
    CONTRACTORS PROFESSIONAL LIABILITY — "Corporate Authority"
    Bloomberg/FT aesthetic: dense, institutional, authoritative
-   Light blue-white content sections · deep navy hero/footer
+   Warm ivory content sections · deep walnut hero/footer
    ============================================================ */
 
 @layer base {
   :root {
-    --bg-cream: #f2f4f8;
-    --bg-sand: #e6eaf2;
+    --bg-cream: #F8F5F0;
+    --bg-sand: #EFE8DE;
     --bg-white: #FFFFFF;
-    --clay: #0a1628;
-    --clay-dark: #050d1a;
-    --sage: #4a90d9;
-    --gold: #c0c0c0;
-    --espresso: #0a1628;
-    --cocoa: #1e3360;
-    --mocha: #3d5a80;
-    --adobe: #c4cce0;
+    --clay: #2A1D15;
+    --clay-dark: #1A120D;
+    --sage: #B0501A;
+    --gold: #D4A640;
+    --espresso: #1F1712;
+    --cocoa: #3D2E24;
+    --mocha: #5E4E42;
+    --adobe: #DCD2C4;
     --radius: 0;
   }
 
@@ -35,7 +35,7 @@
 
   body {
     background-color: var(--bg-cream);
-    color: #2d3748;
+    color: #3A2F28;
     font-family: var(--font-body), system-ui, -apple-system, sans-serif;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
@@ -48,7 +48,7 @@
   }
 
   ::selection {
-    background: rgba(10, 22, 40, 0.12);
+    background: rgba(42, 29, 21, 0.12);
     color: var(--espresso);
   }
 }
@@ -103,7 +103,7 @@
     position: absolute;
     top: 0; left: 0; bottom: 0;
     width: 3px;
-    background: linear-gradient(180deg, #0a1628 0%, #4a90d9 100%);
+    background: linear-gradient(180deg, #2A1D15 0%, #B0501A 100%);
   }
   .pill { @apply inline-flex items-center gap-2 px-4 py-1.5 text-xs font-heading font-semibold uppercase tracking-wider; border-radius: 0; }
   .pill-clay { @apply pill bg-clay/10 text-clay border border-clay/25; }
@@ -124,24 +124,24 @@
   .bg-sonoran-sand {
     background-color: var(--bg-sand);
     background-image:
-      linear-gradient(#c4cce0 1px, transparent 1px);
+      linear-gradient(#DCD2C4 1px, transparent 1px);
     background-size: 100% 48px;
   }
   .bg-warm-radial {
     background:
-      radial-gradient(ellipse at top, rgba(10,22,40,0.05) 0%, transparent 55%),
+      radial-gradient(ellipse at top, rgba(42,29,21,0.05) 0%, transparent 55%),
       var(--bg-cream);
   }
   .horizon-band {
     background: linear-gradient(180deg,
-      #0a1628 0% 25%, #1e3360 25% 50%, #c0c0c0 50% 75%, #0a1628 75% 100%);
+      #2A1D15 0% 25%, #4A3326 25% 50%, #D4A640 50% 75%, #2A1D15 75% 100%);
   }
   .grain {
     background-image:
-      repeating-linear-gradient(90deg, rgba(10,22,40,0.0) 0px, rgba(10,22,40,0.0) 47px, rgba(10,22,40,0.04) 47px, rgba(10,22,40,0.04) 48px);
+      repeating-linear-gradient(90deg, rgba(42,29,21,0.0) 0px, rgba(42,29,21,0.0) 47px, rgba(42,29,21,0.04) 47px, rgba(42,29,21,0.04) 48px);
   }
   .dotted-warm {
-    background-image: radial-gradient(circle, rgba(10,22,40,0.08) 1px, transparent 1px);
+    background-image: radial-gradient(circle, rgba(42,29,21,0.08) 1px, transparent 1px);
     background-size: 24px 24px;
   }
   .arch-divider { position: relative; height: 1px; width: 100%; background: var(--adobe); margin: 0; }
@@ -150,9 +150,9 @@
   .prose-warm { @apply max-w-none; }
   .prose-warm h2 { @apply font-heading font-extrabold text-2xl md:text-3xl text-espresso mt-12 mb-4; }
   .prose-warm h3 { @apply font-heading font-bold text-xl md:text-2xl text-espresso mt-8 mb-3; }
-  .prose-warm p { @apply text-[#2d3748] leading-relaxed mb-5 text-[1.05rem]; }
+  .prose-warm p { @apply text-[#3A2F28] leading-relaxed mb-5 text-[1.05rem]; }
   .prose-warm ul { @apply my-5 space-y-2 pl-0 list-none; }
-  .prose-warm li { @apply text-[#2d3748] leading-relaxed pl-7 relative; }
+  .prose-warm li { @apply text-[#3A2F28] leading-relaxed pl-7 relative; }
   .prose-warm li::before {
     content: ""; position: absolute; left: 0; top: 0.6em;
     width: 1rem; height: 2px;
