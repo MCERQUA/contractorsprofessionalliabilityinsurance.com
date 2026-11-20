@@ -7,7 +7,11 @@ import { Footer } from "@/components/sections/Footer";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { SITE } from "@/lib/site";
 import { US_STATES, QUOTE_SERVICE_TYPES, YEARS_OPTIONS, COPY } from "@/lib/content";
+import { AcordFields } from "@/components/forms/AcordFields";
+import { ACORD_FIELDS } from "@/lib/acord-fields";
 import { CheckCircle2, ShieldCheck, ArrowRight, Phone, Clock, Zap, MapPin } from "lucide-react";
+
+const ACORD_INITIAL: Record<string, string> = Object.fromEntries(ACORD_FIELDS.map((f) => [f.name, ""]));
 
 const WEBHOOK_URL = `https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=${SITE.domain}`;
 
@@ -19,9 +23,10 @@ const trustItems = [
 ];
 
 export default function QuotePage() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<Record<string, string>>({
     name: "", businessName: "", email: "", phone: "", state: "", serviceType: "", yearsInBusiness: "", message: "", "bot-field": "",
-    street_address: "", city: "", zip: "", prior_year_gross_sales: "", prior_year_subcontractor_expenses: "", prior_year_employee_count: "", prior_year_employee_payroll: "", estimated_gross_sales: "", estimated_subcontractor_expenses: "", estimated_employee_count: "", estimated_employee_payroll: "", estimated_material_costs: "", subcontractors_have_insurance: "", percent_subcontractors_insured: "", coverage_for_uninsured_subcontractors: "", coverage_types: "", annual_gross_sales: "", year_business_started: "", business_description: "", class_code_1: "", class_code_2: "", class_code_3: "", class_code_4: "", class_code_5: "", residential_vs_commercial: "", new_vs_existing_construction: "", largest_projects: "", prior_carrier_name: "", prior_policy_number: "", prior_policy_expiration: "",
+    street_address: "", city: "", zip: "", prior_year_gross_sales: "", prior_year_subcontractor_expenses: "", prior_year_employee_count: "", prior_year_employee_payroll: "", estimated_gross_sales: "", estimated_subcontractor_expenses: "", estimated_employee_count: "", estimated_employee_payroll: "", estimated_material_costs: "", subcontractors_have_insurance: "", percent_subcontractors_insured: "", coverage_for_uninsured_subcontractors: "", coverage_types: "", annual_gross_sales: "", year_business_started: "", business_description: "", class_code_1: "", class_code_2: "", class_code_3: "", class_code_4: "", class_code_5: "", residential_vs_commercial: "", new_vs_existing_construction: "", largest_projects: "", prior_carrier_name: "", prior_policy_expiration: "",
+    ...ACORD_INITIAL,
   });
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -132,6 +137,8 @@ export default function QuotePage() {
                         <label htmlFor="message" className={labelClass}>Tell us about your operation <span className="text-mocha/60 font-normal">(optional)</span></label>
                         <textarea id="message" name="message" rows={4} value={formData.message} onChange={handleChange} placeholder={COPY.quote.messagePlaceholder} className={`${inputClass} resize-none`} />
                       </div>
+
+                      <AcordFields values={formData} onChange={(name, value) => setFormData((prev) => ({ ...prev, [name]: value }))} />
 
                       {error && <p className="text-red-600 text-sm font-medium">{error}</p>}
 
@@ -267,10 +274,6 @@ export default function QuotePage() {
         <div>
           <label className="block text-sm font-bold mb-1.5">Prior insurance carrier name</label>
           <input type="text" name="prior_carrier_name" value={formData.prior_carrier_name} onChange={(e) => setFormData({ ...formData, prior_carrier_name: e.target.value })} className="w-full px-4 py-2.5 border rounded-lg" />
-        </div>
-        <div>
-          <label className="block text-sm font-bold mb-1.5">Prior policy number</label>
-          <input type="text" name="prior_policy_number" value={formData.prior_policy_number} onChange={(e) => setFormData({ ...formData, prior_policy_number: e.target.value })} className="w-full px-4 py-2.5 border rounded-lg" />
         </div>
         <div>
           <label className="block text-sm font-bold mb-1.5">Prior policy expiration date</label>
